@@ -1,0 +1,9 @@
+secrets:
+  localUsers: "user:lefW`n43*72"
+  create: true
+concourse:
+  web:
+    auth:
+      mainTeam:
+        localUser: "user"
+    externalUrl: http://concourse.lan
