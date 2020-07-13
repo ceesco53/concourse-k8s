@@ -7,3 +7,13 @@ concourse:
       mainTeam:
         localUser: "user"
     externalUrl: http://concourse.lan
+    ingress:
+      hosts:
+        - concourse.lan
+      enabled: true
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: concourse.lan
+        kubernetes.io/ingress.class: nginx
+  worker:
+    enabled: true
+    replicas: 3
